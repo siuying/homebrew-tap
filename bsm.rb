@@ -6,5 +6,6 @@ cask 'bsm' do
   name "BSM Input Method"
   homepage "https://github.com/siuying/BSMInputMethod"
 
-  artifact 'BSMInputMethod.app', target: '~/Library/Input Methods/BSMInputMethod.app'
+  artifact 'BSMInputMethod.app', target: '/Library/Input Methods/BSMInputMethod.app'
+  uninstall delete:  '/Library/Input Methods/BSMInputMethod.app'
 end
